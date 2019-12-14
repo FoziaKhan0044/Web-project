@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <title>School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background:url(jumbotron.jpg); height: 350px;margin-bottom:30px;" >
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="list-group">
+        <h4 href="#" class="list-group-item active" style="background-color: #3498db; color:#ffffff">Students</h4>
+        <a href="students_detail.php" class="list-group-item">Students Details</a>
+        <a href="home.html" class="list-group-item">Add New Student</a>
+      </div>
+        <div class="list-group" style="margin-top:30px">
+          <h4 href="#" class="list-group-item active" style="background-color: #3498db; color:#ffffff">Staff</h4>
+          <a href="staff_details.php" class="list-group-item">Staff Details</a>
+          <a href="#" class="list-group-item">Add Staff Member</a>
+      </div>
+      <div class="list-group" style="margin-top:30px">
+        <h4>  <a href="acc_auth.html" class="list-group-item active" style="background-color: #3498db; color:#ffffff;">Accounts</a></h4>
+    </div>
+    </div>
+
+    <div class="col-md-8">
+<div class="card">
+  <div class="card-body" style="background-color: #3498db; color:#ffffff">Add Staff Member</div>
+  <div class="card-body">
+<form class="form-group" action="add_staff_member.php" method="post">
+  <label>Name: </label>
+  <input type="text" name="name" class="form-control" placeholder="Member's Name" required><br>
+  <label>Job Title: </label>
+  <input type="text" name="job" class="form-control" placeholder="Job Title" required><br>
+  <label>Father's Name: </label>
+  <input type="text" name="father" class="form-control" placeholder="Fathers Name" required><br>
+  <label>Contact: </label>
+  <input type="number" name="contact" class="form-control" placeholder="Contact" required><br>
+  <label>Email Address: </label>
+  <input type="text" name="email" class="form-control" placeholder="Email Address" required><br>
+  <label>Address: </label>
+  <input type="text" name="address" class="form-control" placeholder="Address" required><br>
+  <label>Salary: </label>
+  <input type="number" name="salary" class="form-control" placeholder="Basic Salary"><br>
+  <label>Joined: </label>
+  <input type="date" name="join" class="form-control" placeholder="Joining Date" required><br>
+  <input type="submit" class="btn btn-outline-primary" value="Add Staff">
+
+</form>
+  </div>
+
+</div>
+</div>
+
+    <div class="col-md-1">
+
+    </div>
+  </div>
+
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>

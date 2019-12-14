@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <title>Admin Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body style="background:url('test.jpg'); background-size: cover">
+<div class="container-fluid" style="width:400px; margin-top: 60px;border:solid #3498db 2px; padding-top:20px">
+  <div class="card">
+    <img src="adminback.jpg" class="card-img-top">
+    </div>
+    <div class="card-body">
+      <form class="form-group" action="login.php" method="post" style="color:#ffffff;">
+        <label style="font-size: 20px"><b>Username: </b></label>
+        <input type="text" name="adminname" class="form-control" placeholder="Enter Username" required><br>
+        <label style="font-size: 20px"><b>Password: </b></label>
+        <input type="password" name="adminpassword" class="form-control" placeholder="Enter Password" required><br>
+        <input style="font-size: 20px; width:325px" type="submit" class="btn btn-primary" value="Login">
+      </form>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

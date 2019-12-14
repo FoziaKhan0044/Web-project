@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <title>School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background:url(jumbotron.jpg); height: 350px;margin-bottom:30px;" >
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="list-group">
+        <h4 href="#" class="list-group-item active" style="background-color: #3498db; color:#ffffff">Accounts</h4>
+        <a href="#" class="list-group-item">Voucher</a>
+        <a href="classify_students.html" class="list-group-item">Classes</a>
+        <a href="create_salary.html" class="list-group-item">Create Salary</a>
+        <a href="salary_status.php" class="list-group-item">Salary Status</a>
+      </div>
+  </div>
+
+    <div class="col-md-8">
+<div class="card">
+  <div class="card-body" style="background-color: #3498db; color:#ffffff"><h4>Generate Voucher</h4></div>
+  <div class="card-body">
+<form class="form-group" action="gen_voucher.php" method="post">
+  <label>Name: </label>
+  <input type="text" name="name" class="form-control" placeholder="Student's Name" required><br>
+  <label>Father's Name: </label>
+  <input type="text" name="father" class="form-control" placeholder="Fathers Name" required><br>
+  <label>Class: </label>
+  <input type="text" name="class" class="form-control" placeholder="Class" required><br>
+  <label>Date: </label>
+  <input type="date" name="today_date" class="form-control" placeholder="Date" required><br>
+  <label>Month: </label>
+  <input type="text" name="month" class="form-control" placeholder="Month" required><br>
+  <label>Tuition Fee: </label>
+  <input type="number" name="tuition_fee" class="form-control" placeholder="Tuition Fee" required><br>
+  <label>Dues: </label>
+  <input type="number" name="dues" class="form-control" placeholder="Dues"><br>
+  <label>Annual Fee: </label>
+  <input type="number" name="annual_fee" class="form-control" placeholder="Annual Fee"><br>
+  <input type="submit" class="btn btn-outline-primary" value="Generate">
+
+</form>
+  </div>
+
+</div>
+</div>
+
+    <div class="col-md-1">
+
+    </div>
+  </div>
+
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
